@@ -1,5 +1,5 @@
 import icons from "url:../../img/icons.svg";
-const Fraction = require("fractional");
+// import { Fraction } from "fractional";
 import { mark } from "regenerator-runtime";
 import View from "./view";
 
@@ -99,7 +99,8 @@ class RecipeView extends View {
               </svg>
               <div class="recipe__quantity">${
                 ingredient.quantity
-                  ? new Fraction(ingredient.quantity).toString()
+                  ? // ? new Fraction(ingredient.quantity).toString()
+                    ingredient.quantity
                   : ""
               }</div>
               <div class="recipe__description">
